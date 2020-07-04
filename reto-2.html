@@ -1,1 +1,82 @@
-<h1>RETO 2</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reto-2.css">
+    <title>VIDEO TV</title>
+</head>
+<body>
+   <header class="header">
+       <div class="header__contenedor">
+         <div class="header__logo">
+           <p>VIDEO TV </p>
+         </div>
+         <nav class="header__menu">
+           <ul>
+             <li>
+               <a href="#" class="buton__modal">Agregar Video</a>
+             </li>
+           </ul>
+         </nav>
+       </div>
+     </header>
+   
+   <div class="modal">
+       <div class="modal-content">
+           <span class="close-button">×</span>
+          <form id="video-form" >
+              <div>
+               <H2 class="modal__title">Agregar Video</H2>
+              </div>
+              <br>
+         <div>
+               <input type="text" placeholder="Titulo" id="title">
+               <input type="text" placeholder="Url-video" id="coverVideo">
+           </div>
+           <div>
+              <textarea class="areatext" id="descripcion" placeholder="descripcion"></textarea>
+           </div>
+           <div  class="form-action-buttons">
+               <input type="submit" value="ACEPTAR">
+                
+           </div>
+          </form>
+       </div> 
+   </div> 
+    <!--cards-->
+    <div class="container__cards">
+        <div class="grid-container" id="grid-container">
+          <div class="card">
+            <div class="dog__crud">
+              <div class="dog__crud__edit">
+                <img src="./iconos/editar.png" alt="">
+                <p>Editar</p>
+              </div>
+              <div class="dog__crud_delete">
+                <img src="./iconos/eliminar.png" alt="">
+                <p>Borrar</p>
+              </div>
+            </div>
+            <div class="bg-img">
+                <video controls>     
+                    <source src="http://techslides.com/demos/sample-videos/small.mp4" type=video/mp4>        
+                </video>
+            </div>
+            <div class="content">
+              <h4>Titulo</h4>              
+              <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam blanditiis earum dolore, doloremque architecto amet incidunt ipsa ad, quam inventore impedit voluptatem dolor eius, facilis mollitia? Corrupti, nam voluptates. Quas.</p>
+              <button>Ver Detalle</button>
+            </div>         
+          </div>         
+          
+          </div>
+        </div>     
+
+          
+   <script src="./js/reto-2.js"></script>    
+</body>
+</html>
+
+
+
